@@ -1,0 +1,370 @@
+body{
+    width: 100%;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    display: flexbox;
+}
+.menu{
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.menuber{
+    width: 100%;
+    height: 50px;
+    background: rgb(63,94,251);
+background: -moz-linear-gradient(90deg, rgba(63,94,251,1) 0%, rgba(249,39,82,1) 100%);
+background: -webkit-linear-gradient(90deg, rgba(63,94,251,1) 0%, rgba(249,39,82,1) 100%);
+background: linear-gradient(90deg, rgba(63,94,251,1) 0%, rgba(249,39,82,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#3f5efb",endColorstr="#f92752",GradientType=1);
+    border-radius: 0px 8px 0px 0px;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 20px;
+    
+}
+
+.page_logo{
+    font-size: 30px;
+}
+
+.page_logo a{
+    text-decoration: none;
+    color: whitesmoke;
+    
+
+}
+
+nav ul{
+    list-style-type: none;
+
+}
+
+nav ul li{
+    display: inline;
+    padding: 0px 10px;
+    
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    border: 3px solid whitesmoke;
+    padding: 3px 10px;
+    border-radius: 30px;
+    animation-name: menuber_style;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+
+}
+nav ul li a:hover{
+    background-color: blue;
+    
+}
+
+button{
+    font-size: 20px;
+    border-radius: 30px;
+    box-shadow: 3px 3px 5px black;
+    
+}
+button:hover{
+    background-color: black;
+    
+}
+button a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+button a:hover{
+    color: whitesmoke;
+}
+/* ======================
+         End Menuber
+========================= */
+
+/* ========================
+        Start Hero Section
+=========================== */
+
+.hero{
+
+}
+
+.hero_section{
+    width: 100%;
+    height: 800px;
+    background-image: url(/images/amazo-company-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    
+}
+/* ===Hero Section Keyframes Start=== */
+
+/* ===End Section Keyframes Start=== */
+
+.hero_section h1{
+    position: absolute;
+    text-align: left;
+    margin: 50px 100px;
+    font-size: 50px;
+    
+}
+#hero_des{
+    position: absolute;
+    width: 400px;
+    color: white;
+    margin: 150px 60px;
+    font-size: 30px;
+    border: 3px solid black;
+    padding: 3px 20px;
+    border-radius: 20px;
+}
+.hero_apply_button{
+    width: 100%;
+    text-align: center;
+    padding-top: 400px;
+
+}
+.hero_apply_button a{
+    text-decoration: none;
+    font-size: 50px;
+    color: white;
+    border: 5px solid black;
+    padding: 5px 10px;
+    box-shadow: 0px 5px 5px 5px white;
+    border-radius: 30px;
+    
+    
+}
+
+/* ===================
+    End Hero Section
+====================== */
+
+/* ====================
+    Start Post Section
+======================= */
+
+.post_section{
+    height: 600px;
+    padding: 10px 10px;
+    background-color: aquamarine;
+    
+}
+.cards{
+    display: flex;
+    justify-content: center;
+
+}
+
+.coca_cola_job{
+    padding: 10px 10px;
+    width: 500px;
+    height: 580px;
+    border: 3px solid black;
+    box-shadow: 3px 3px 10px black;
+    background-color: #66FF33;
+}
+.coca_cola_job img{
+    width: 500px;
+    height: 400px;
+    
+}
+
+.coca_cola_title, h1{
+    text-align: center;
+    margin: 0;
+}
+.coca_cola_des{
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    
+}
+.coca_cola_button{
+    text-align: center;
+    font-size: 40px;
+    
+}
+.coca_cola_button a{
+    text-decoration: none;
+    border: 5px solid white;
+    border-radius: 30px;
+    padding: 3px 10px;
+    background-color: black;
+    color: whitesmoke;
+    box-shadow: 5px 5px 10px black;
+    animation-name: coca_cola_button_style;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+
+}
+.coca_cola_button a:hover{
+    background-color: white;
+    color: black;
+
+}
+/* ===Coca Cola End=== */
+
+/* ===Start Amazon Flex Job=== */
+.amazon_flex_job{
+    padding: 10px 10px;
+    width: 500px;
+    height: 580px;
+    border: 3px solid black;
+    box-shadow: 3px 3px 10px black;
+    background-color: #66FF33;
+    
+}
+.amazon_flex_job img{
+    width: 500px;
+    height: 400px;
+    
+}
+.amazon_flex_des{
+    text-align: center;
+    font-size: 20px;
+}
+.amazon_flex_button{
+    text-align: center;
+    font-size: 40px;
+}
+.amazon_flex_button a{
+    text-decoration: none;
+    border: 5px solid white;
+    padding: 3px 10px;
+    border-radius: 30px;
+    background-color: black;
+    color: whitesmoke;
+    animation-name: amazon_flex_job_button;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+
+}
+.amazon_flex_button a:hover{
+    background-color: white;
+    color: black;
+    border-color: black;
+}
+/* ===End Amazon Flex Job=== */
+
+/* ===Start Footer Section=== */
+
+.footer_area{
+    width: 100%;
+    height: 300px;
+    background-color: sandybrown;
+    
+}
+.footer{
+    
+    
+}
+
+
+.footer_logo{
+    font-size: 30px;
+    padding: 10px 30px;
+}
+.footer_logo a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    
+}
+
+.footer ul{
+    list-style-type: none;
+    display: inline-flex;   
+    position: absolute;
+    right: 0px;
+    padding-top: 200px;
+}
+.footer ul li{
+    padding: 0px 10px;
+
+}
+.footer ul li a{
+    
+    text-decoration: none;
+    color: black;
+    border: 3px solid black;
+    padding: 3px 5px;
+    border-radius: 30px;
+    background-color: white;
+}
+.footer ul li a:hover{
+    background-color: #66FF33;
+}
+/* ==========================
+    End Footer Section
+============================= */
+
+/* ==================================
+    Keyframes Start - Header Menuber
+===================================== */
+
+@keyframes menuber_style{
+    25%{
+        border-color: green;
+    }
+    50%{
+        border-color: black;
+    }
+    75%{
+        border-color: blue;
+    }
+    100%{
+        border-color: aqua;
+    }
+}
+/* ===End Header Menuber=== */
+
+/* ===Start Cocacola Button Keyframes Start=== */
+
+@keyframes coca_cola_button_style{
+    25%{
+        border-color: blue;
+    }
+    50%{
+        border-color: Yellow;
+    }
+    75%{
+        border-color: red;
+    }
+    100%{
+        background-color: white;
+        color: red;
+    }
+}
+/* ===End Coca Cola Button=== */
+
+/* ===Start Amazon Flex Button Keyframes Start=== */
+
+@keyframes amazon_flex_job_button{
+    25%{
+        border-color: blue;
+    }
+    50%{
+        border-color: Yellow;
+    }
+    75%{
+        border-color: red;
+    }
+    100%{
+        background-color: white;
+        color: red;
+    }
+
+}
+/* ===End Amazon Flex Button Keyframes=== */
+
